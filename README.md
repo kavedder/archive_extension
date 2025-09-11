@@ -19,4 +19,4 @@ To specify what shows up in the context menu, click the 🏛️ extension icon i
     - Enter `about:debugging` into the URL bar, click the This Firefox option, click the Load Temporary Add-on button, then select any file in the `firefox` directory
 1. Pin the extension to the taskbar to access the action button.
 1. Open the extension popup by clicking the action button and interact with the UI.
-1. Select the text you want to search and right-click within the selection to view and interact with the context menu.
+1. Right click on any link and go to town
