@@ -12,7 +12,7 @@ import { baseUrls, SUBMIT_REQUEST, ARCHIVE_CACHED, WAYBACK_CACHED } from './urls
 // context menu items only need to be created at runtime.onInstalled
 browser.runtime.onInstalled.addListener(async () => {
   for (const [baseUrl, archiveMode] of Object.entries(baseUrls)) {
-    chrome.contextMenus.create({
+    browser.contextMenus.create({
       id: baseUrl,
       title: archiveMode,
       type: 'normal',

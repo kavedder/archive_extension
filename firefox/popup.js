@@ -12,7 +12,7 @@ createForm().catch(console.error);
 
 async function createForm() {
   const { enabledUrls = Object.keys(baseUrls) } =
-    await chrome.storage.sync.get('enabledUrls');
+    await browser.storage.sync.get('enabledUrls');
   const checked = new Set(enabledUrls);
 
   const form = document.getElementById('form');
@@ -42,11 +42,11 @@ async function handleCheckboxClick(event) {
   const enabled = checkbox.checked;
 
   const { enabledUrls = Object.keys(baseUrls) } =
-    await chrome.storage.sync.get('enabledUrls');
+    await browser.storage.sync.get('enabledUrls');
   const urlSet = new Set(enabledUrls);
 
   if (enabled) urlSet.add(baseUrl);
   else urlSet.delete(baseUrl);
 
-  await chrome.storage.sync.set({ enabledUrls: [...urlSet] });
+  await browser.storage.sync.set({ enabledUrls: [...urlSet] });
 }
