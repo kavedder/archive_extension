@@ -30,7 +30,7 @@ chrome.contextMenus.onClicked.addListener((item, tab) => {
   console.log(`refUrl: ${refUrl} | reqType: ${reqType} | baseUrl: ${baseUrl}`)
   if (reqType == CACHED_VERISON) {
     url = new URL(`https://${baseUrl}/${refUrl}`);
-  } else  {
+  } else if (reqType == SUBMIT_REQUEST) {
     url.searchParams.set('url', refUrl);
   }
   
