@@ -1,0 +1,19 @@
+{
+  "name": "Fetch Archived Version",
+  "description": "Uses the context menu get or request an archived version of the link",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": ["contextMenus", "storage"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "archive16.png",
+    "48": "archive48.png",
+    "128": "archive128.png"
+  }
+}
