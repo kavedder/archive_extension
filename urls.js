@@ -5,5 +5,5 @@ export const SUBMIT_REQUEST = 'Submit archive request';
 
 export const baseUrls = {
   'archive.is': CACHED_VERISON,
-  'archive.is/submit': SUBMIT_REQUEST // must be percent encoded
+  'archive.is/submit': SUBMIT_REQUEST
 };

@@ -1,9 +1,11 @@
+// ORIGINAL LICENSE
 // Copyright 2017 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// When you specify "type": "module" in the manifest background,
-// you can include the service worker as an ES Module,
+// With some modifications by https://github.com/kavedder
+// IDK do what you want 
+
 import { baseUrls, SUBMIT_REQUEST, CACHED_VERISON } from './urls.js';
 
 // Add a listener to create the initial context menu items,
