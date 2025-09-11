@@ -1,10 +1,9 @@
-# chrome.contextMenus
-
-This sample demonstrates the `chrome.contextMenus` API by letting a user switch between searching different countries' versions of Google via a `contextMenu`.
+# Google Chrome Archive Context Menu Extension
+Mostly copied from [Global Google Search context menu sample](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/api-samples/contextMenus/global_context_search) but to do different stuff!
 
 ## Overview
 
-The extension uses `chrome.contextMenus.create()` to populate the context menu with locale options based on an options menu in the popup. A `chrome.contextMenus.onClicked.addListener()` event will open a specific locale's Google homepage when one of the extension's context menu options are clicked.
+The extension uses `chrome.contextMenus.create()` to populate the context menu with archive request type options based on an options menu in the popup. A `chrome.contextMenus.onClicked.addListener()` event will open an `archive.is` link when one of the extension's context menu options are clicked.
 
 ## Running this extension
 
