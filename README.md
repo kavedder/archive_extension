@@ -1,9 +1,13 @@
 # Google Chrome Archive Context Menu Extension
-Mostly copied from [Global Google Search context menu sample](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/api-samples/contextMenus/global_context_search) but to do different stuff!
+Mostly copied from [Global Google Search context menu sample](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/api-samples/contextMenus/global_context_search) but to do different 💩!
 
 ## Overview
 
-The extension uses `chrome.contextMenus.create()` to populate the context menu with archive request type options based on an options menu in the popup. A `chrome.contextMenus.onClicked.addListener()` event will open an `archive.is` link when one of the extension's context menu options are clicked.
+The extension uses `chrome.contextMenus.create()` to populate the context menu with archive request type options based on an options menu in the popup. A `chrome.contextMenus.onClicked.addListener()` event will open an archived link when one of the extension's context menu options are clicked.
+
+To specify what shows up in the context menu, click the 🏛️ extension icon in the top right, and select/deselect what you want.
+
+![Screenshots showing various context menu options resulting from checking/unchecking archive types](./archive_modes.png)
 
 ## Running this extension
 
