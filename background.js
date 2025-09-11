@@ -6,7 +6,7 @@
 // With some modifications by https://github.com/kavedder
 // IDK do what you want 
 
-import { baseUrls, SUBMIT_REQUEST, CACHED_VERISON } from './urls.js';
+import { baseUrls, SUBMIT_REQUEST, ARCHIVE_CACHED, WAYBACK_CACHED } from './urls.js';
 
 // Add a listener to create the initial context menu items,
 // context menu items only need to be created at runtime.onInstalled
@@ -26,9 +26,8 @@ chrome.contextMenus.onClicked.addListener((item, tab) => {
   const refUrl = item.linkUrl;
   const baseUrl = item.menuItemId;
   const reqType = baseUrls[baseUrl];
-  var url = new URL(`https://${baseUrl}/`);
-  console.log(`refUrl: ${refUrl} | reqType: ${reqType} | baseUrl: ${baseUrl}`)
-  if (reqType == CACHED_VERISON) {
+  let url = new URL(`https://${baseUrl}/`);
+  if (reqType == ARCHIVE_CACHED || reqType == WAYBACK_CACHED) {
     url = new URL(`https://${baseUrl}/${refUrl}`);
   } else if (reqType == SUBMIT_REQUEST) {
     url.searchParams.set('url', refUrl);
