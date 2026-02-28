@@ -17,8 +17,16 @@
 
   <body>
     <h2>Fetch Archived Version</h2>
-    <h3>Mode</h3>
-    <form id="form"></form>
-    <script src="popup.js" type="module"></script>
+    <h3>Reload Now</h3>
+    <label for="reload-select">via...</label>
+    <select id="reload-select"></select>
+    <script src="reload_dropdown.js" type="module"></script>
+
+    <button id="reload-button">Reload Now</button>
+    <script src="reload_button.js" type="module"></script>
+
+    <h3>Context Menu Options</h3>
+    <form id="context-menu-form"></form>
+    <script src="checkboxes.js" type="module"></script>
   </body>
 </html>

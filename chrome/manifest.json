@@ -1,9 +1,9 @@
 {
   "name": "Fetch Archived Version",
   "description": "Uses the context menu get or request an archived version of the link",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 3,
-  "permissions": ["contextMenus", "storage"],
+  "permissions": ["contextMenus", "storage", "tabs"],
   "background": {
     "service_worker": "background.js",
     "type": "module"
